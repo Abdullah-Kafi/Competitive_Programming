@@ -1,0 +1,7 @@
+#include<stdio.h>
+
+int main() {
+    int pageNum;
+    scanf("%d", &pageNum);
+    if(pageNum >= 8) 
+}

@@ -1,0 +1,16 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int i, j1, j2, j3;
+    for(i = 1, j1 = 7, j2 = 6, j3 = 5; i <= 9; i += 2, j1 += 2, j2 += 2, j3 += 2) {
+        printf("I=%d J=%d\nI=%d J=%d\nI=%d J=%d\n", i, j1, i, j2, i, j3);
+    }
+    return 0;
+}
+
+
+
+

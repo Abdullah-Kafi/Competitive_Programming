@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main() {
+    int i, T, X;
+    scanf("%d", &T);
+    for(i = 1; i <= T; i++) {
+        scanf("%d", &X);
+        if(X > 24) {
+            printf("YES\n");
+        }
+        else {
+            printf("YES\n");
+        }
+    }
+    return 0;
+}

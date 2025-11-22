@@ -1,0 +1,44 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main()
+{
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+    #endif
+
+    int n, m, t;
+    char s1[200001], s2[200001];
+
+    scanf("%d", &t);
+
+    while(t--)
+    {
+        int cnt = 0, f = 0;
+
+        scanf("%d %d", &n, &m);
+        scanf("%s", s1);
+        scanf("%s", s2);
+
+        for(int i = 0; i < n; i++)
+        {
+            f = 0;
+            for(int j = i; j < m; j++)
+            {
+                if(s1[i] == s2[j])
+                {
+                    cnt++;
+                    s2[j] = '5';
+                    f = 1;
+                    break;
+                }
+            }
+            if(!f)
+                break;
+        }
+        printf("%d\n", cnt);
+    }
+    return 0;
+}

@@ -1,0 +1,35 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+#include<limits.h>
+
+int main() 
+{
+    ///freopen("input.txt", "r", stdin);
+    
+    int t, n;
+    int ar[101];
+    scanf("%d", &t);
+    while(t--)
+    {
+        int min = INT_MAX;
+        scanf("%d", &n);
+        for(int i = 1; i <+ n; i++)
+        {
+            scanf("%d", &ar[i]);
+        }
+        for(int i = 1; i < n; i++)
+        {
+            for(int j = i + 1; j <= n; j++)
+            {
+                if(ar[i] + ar[j] + j - i < min)
+                {
+                    min = ar[i] + ar[j] + j - i;
+                }
+            }
+        }
+        printf("%d\n", min);
+    }
+    return 0;
+}

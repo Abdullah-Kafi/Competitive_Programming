@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main()
+{
+    double a = 20.02, b = 40.88, sum;
+    int c, d;
+
+    c = a;
+    d = b;
+
+
+
+    sum = (double) (c + d);
+
+    printf("Sum is: %lf\n", sum);
+    printf("Sum is: %0.0lf\n", sum);
+
+    return 0;
+}

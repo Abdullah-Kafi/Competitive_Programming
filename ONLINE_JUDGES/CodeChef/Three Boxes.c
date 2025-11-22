@@ -1,0 +1,42 @@
+#include<stdio.h>
+
+int main() {
+    int i, T, A, B, C, D;
+    scanf("%d", &T);
+
+    for(i = 0; i < T; i++) {
+        scanf("%d %d %d %d", &A, &B, &C, &D);
+//        if((A + B + C) <= D) {
+//            printf("1\n");
+//        }
+//        else if((A + B) <= D) {
+//            printf("2\n");
+//        }
+//        else if((B + C) <= D) {
+//            printf("2\n");
+//        }
+//        else if((C + A) <= D) {
+//            printf("2\n");
+//        }
+//        else if(A <= D) {
+//            printf("3\n");
+//        }
+//        else if(B <= D) {
+//            printf("3\n");
+//        }
+//        else if(C <= D) {
+//            printf("3\n");
+//        }
+        if((A + B + C) <= D) {
+            printf("1\n");
+        }
+        else if((A + B) <= D || (B + C) <= D || (C + A) <= D) {
+            printf("2\n");
+        }
+        else {
+            printf("3\n");
+        }
+    }
+
+    return 0;
+}

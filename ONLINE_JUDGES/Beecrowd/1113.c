@@ -1,0 +1,20 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int n, m;
+    scanf("%d %d", &n, &m);
+    while(n != m) {
+        if(n > m) {
+            printf("Decrescente\n");
+        }
+        else {
+            printf("Crescente\n");
+        }
+        scanf("%d %d", &n, &m);
+    }
+    return 0;
+}
+

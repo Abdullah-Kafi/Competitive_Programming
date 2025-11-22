@@ -1,0 +1,4 @@
+1. Magical Function
+2. Subproblem solve
+3. do necessary task for 'current state'(for an input)
+4. base case define

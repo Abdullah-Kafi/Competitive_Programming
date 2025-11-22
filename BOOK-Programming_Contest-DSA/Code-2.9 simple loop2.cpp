@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ///counts how many 2 divides 100:
+    int n = 100, cnt = 0;
+
+    while(n % 2 == 0)
+    {
+        n /= 2;
+        cnt++;
+    }
+    cout << cnt << '\n';
+
+    ///finds out the highest number which is
+    ///power of 2 and less than 1000
+    int x = 1;
+    while(x * 2 < 1000)
+        x *= 2;
+    cout << x << '\n';
+
+    int i;
+    for(i = 1; i * 2 < 1000; i *= 2);
+    cout << i << '\n';
+    return 0;
+}

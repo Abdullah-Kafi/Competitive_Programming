@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+
+int main() {
+    int i, T, N, V1, V2;
+    scanf("%d", &T);
+    for(i = 1; i <= T; i++) {
+        scanf("%d %d %d", &N, &V1, &V2);
+        if(((2 * N) / (float)V2) < ((sqrt(2) * N) / V1)) {
+            printf("Elevator\n");
+        }
+        else {
+            printf("Stairs\n");
+        }
+    }
+    return 0;
+}

@@ -1,0 +1,32 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    double a, b, c, d, exmScore;
+    scanf("%lf %lf %lf %lf", &a, &b, &c, &d);
+    double avg = ( a * 2 + b * 3 + c * 4 + d * 1 ) / 10;
+    printf("Media: %0.1lf\n", avg);
+    if(avg >= 7.0) {
+        printf("Aluno aprovado.\n");
+    }
+    else if(avg < 5.0) {
+        printf("Aluno reprovado.\n");
+    }
+    else if(avg >= 5.0 && avg <= 6.9) {
+        printf("Aluno em exame.\n");
+        scanf("%lf", &exmScore);
+        printf("Nota do exame: %0.1lf\n", exmScore);
+        avg = ( avg + exmScore ) / 2;
+        if(avg >= 5.0) {
+            printf("Aluno aprovado.\n");
+        }
+        else if(avg <= 4.9) {
+            printf("Aluno reprovado.\n");
+        }
+        printf("Media final: %0.1lf\n", avg);
+     }
+    return 0;
+}
+

@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main() {
+    int i, j, T, N;
+    scanf("%d", &T);
+    for(i = 1; i <= T; i++) {
+        scanf("%d", &N);
+        for(j = 1; j <= N; j++) {
+            printf("%d", j);
+            if(j != N) {
+                printf(" ");
+            }
+            else if(j == N) {
+                printf("\n");
+            }
+        }
+    }
+    return 0;
+}

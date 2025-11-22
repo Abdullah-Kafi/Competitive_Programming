@@ -1,0 +1,19 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int n, x, y;
+    scanf("%d", &n);
+    for(int i = 1; i <= n; i++) {
+        if(x % y == 0) {
+        printf("%.1lf\n", x * 1.0 / y);
+    }
+    else {
+        printf("divisao impossivel\n");
+    }
+    }
+    return 0;
+}
+

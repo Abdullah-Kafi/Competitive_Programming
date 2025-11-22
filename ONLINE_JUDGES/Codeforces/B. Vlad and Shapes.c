@@ -1,0 +1,42 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main()
+{
+    int t, n, k, temp, sum , f;
+    scanf("%d", &t);
+    while(t--)
+    {
+        sum = 0;
+        temp = 0;
+        f = 0;
+        scanf("%d", &n);
+        for(int i = 1; i <= n; i++)
+        {
+            for(int j = 1; j <= n; j++)
+            {
+                scanf("%d", &k);
+                if(k == 1)
+                {
+                    sum += k;
+                }
+            }
+            if(( temp == sum ) && sum > 0)
+            {
+                temp = sum;
+                f = 1;
+            }
+        }
+        if(f == 1)
+        {
+            printf("SQUARE\n");
+        }
+        else
+        {
+            printf("TRIANGLE\n");
+        }
+    }
+    return 0;
+}

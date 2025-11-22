@@ -1,0 +1,29 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int t, n;
+    scanf("%d", &t);
+    while(t--) {
+        scanf("%d", &n);
+        for(int i = 1; i <= n; i++) {
+            scanf("%d %d", &a, &x);
+            if(a == 1 && i == 1) {
+                temp = x;
+            }
+            if(a == 1 && x >= temp) {
+                start = x;
+                temp = x;
+            }
+            else if(a == 2 && x >= temp) {
+                end = x;
+                temp = x;
+            }
+            else if(a == 3 && )
+        }
+    }
+    return 0;
+}
+

@@ -1,0 +1,56 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+#include<string.h>
+
+void sort(int ar[], int n)
+{
+    for(int i = 0; i < n - 1; i++)
+    {
+        for(int j = i + 1; j < n; j++)
+        {
+            if(ar[i] > ar[j])
+                swap(&ar[i], &ar[j]);
+        }
+    }
+}
+
+void swap(int* a, int* b)
+{
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+
+int main()
+{
+    #ifndef ONLINE_JUDGE
+        /// freopen("input.txt", "r", stdin);
+    #endif
+    int t; scanf("%d", &t);
+    char s[51];
+
+    while(t--)
+    {
+        scanf(" %s", s);
+        int len = strlen(s);
+        int a = 0, b = 0, c = 0;
+        for(int i = 0; i < len; i++)
+        {
+            if(s[i] == 'A')
+                a++;
+            else if(s[i] == 'B')
+                b++;
+            else if(s[i] == 'C')
+                c++;
+        }
+        if(b == (a + c))
+            printf("YES\n");
+        else
+            printf("NO\n");
+    }
+    return 0;
+}
+
+

@@ -1,0 +1,17 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    if( ( a * c ) > ( b * c ) ) {
+        printf("%d\n", a * c);
+    }
+    else {
+        printf("%d\n", b * c);
+    }
+    return 0;
+}
+

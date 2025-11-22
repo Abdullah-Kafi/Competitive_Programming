@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class Chai
+{
+    // data members(attributes)
+    string teaName; // Name of the tea
+    int servings; // Number of Servings
+    vector<string> ingredients; // list of ingredients of the tea
+
+    // Member function - Method
+    void displayChaiDetails()
+    {
+        cout << "Tea Name: " << teaName << endl;
+        cout << "Servings: " << servings << endl;
+        for(auto ingredient : ingredients)
+        {
+            cout << ingredient << " ";
+        }
+        cout << endl;
+    }
+};
+
+int main()
+{
+
+    return 0;
+}

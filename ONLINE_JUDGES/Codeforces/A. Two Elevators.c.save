@@ -1,0 +1,27 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+#include<math>
+///A. Two Elevators
+
+int main()
+{
+    ///freopen("input.txt", "r", stdin);
+
+    int t, a, b, c, fst, snd;
+    scanf("%d", &t);
+    while(t--)
+    {
+        scanf("%d %d %d", &a, &b, &c);
+        fst = abs(a - 1);
+        snd = abs(b - c) + abs(c - 1);
+        if(fst > snd)
+            printf("2\n");
+        else if(fst < snd)
+            printf("1\n");
+        else
+            printf("3\n");
+    }
+    return 0;
+}

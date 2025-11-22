@@ -1,0 +1,17 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main()
+{
+    int n, m;
+    scanf("%d", &n);
+    m = n;
+    for(int i = 1; i <= 10; i++)
+    {
+        printf("%d X %d = %d\n", n, i, m);
+        m += n;
+    }
+    return 0;
+}

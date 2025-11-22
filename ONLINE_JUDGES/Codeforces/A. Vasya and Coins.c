@@ -1,0 +1,26 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+///A. Vasya and Coins
+
+int main()
+{
+    ///freopen("input.txt", "r", stdin);
+
+    int t, a, b;
+    scanf("%d", &t);
+    while(t--)
+    {
+        scanf("%d %d", &a, &b);
+        if(a == 0 && b != 0)
+            printf("1\n");
+        else if(a != 0 && b == 0)
+            printf("%d\n", a + 1);
+        else if(a != 0 && b != 0)
+            printf("%d\n", a + b * 2 + 1);
+        else
+            printf("1\n");
+    }
+    return 0;
+}

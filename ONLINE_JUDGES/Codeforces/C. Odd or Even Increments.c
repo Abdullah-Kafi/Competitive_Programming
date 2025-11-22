@@ -1,0 +1,70 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+///C. Odd/Even Increments
+
+int main()
+{
+    ///freopen("input.txt", "r", stdin);
+
+    int t, ar[55], n;
+    scanf("%d", &t);
+    while(t--)
+    {
+        int f = 0, a;
+        scanf("%d", &n);
+        for(int i = 1; i <= n; i++)
+        {
+            scanf("%d", &ar[i]);
+        }
+        for(int i = a = 1; i <= n; i += 2)
+        {
+            if(ar[a] % 2 == 0)
+            {
+                if(ar[i] % 2 != 0 /// ar[i] % 2)
+                {
+                    f = 1;
+                    printf("NO\n");
+                    break;
+                }
+            }
+            else
+            {
+                if(ar[i] % 2 == 0)
+                {
+                    f = 1;
+                    printf("NO\n");
+                    break;
+                }
+            }
+        }
+        if(!f)
+        {
+            for(int i = a = 2; i <= n; i += 2)
+            {
+                if(ar[a] % 2 == 0)
+                {
+                    if(ar[i] % 2 != 0 /// ar[i] % 2)
+                    {
+                        f = 1;
+                        printf("NO\n");
+                        break;
+                    }
+                }
+                else
+                {
+                    if(ar[i] % 2 == 0)
+                    {
+                        f = 1;
+                        printf("NO\n");
+                        break;
+                    }
+                }
+            }
+        }
+        if(!f)
+            printf("YES\n");
+    }
+    return 0;
+}

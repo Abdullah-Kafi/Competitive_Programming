@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    vector<int> v;
+    v = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+//    if(find(v.begin(), v.end(), 10) != v.end()) cout << "Element found in vector" << endl;
+//    else cout << "Not found" << endl;
+
+    cout << "Enter the number to find: ";
+    int f; cin >> f;
+
+    vector<int> :: iterator it = find(v.begin(), v.end(), f);
+
+    if(it != v.end()) cout << "Element found in " << (it - v.begin()) + 1 << " position" << endl;
+    else cout << "Not Found" << endl;
+
+    return 0;
+}

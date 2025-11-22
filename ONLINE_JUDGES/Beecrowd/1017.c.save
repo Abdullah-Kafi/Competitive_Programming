@@ -1,0 +1,13 @@
+///In The Name of ALLAH
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%0.3lf\n", (a * 1.0 * b) / 12);
+
+    
+    return 0;
+}

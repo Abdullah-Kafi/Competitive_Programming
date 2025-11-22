@@ -1,0 +1,30 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+///A. Number Transformation
+
+int main() 
+{
+    ///freopen("input.txt", "r", stdin);
+    
+    int t, x, y;
+    scanf("%d", &t);
+    while(t--)
+    {
+        scanf("%d %d", &x, &y);
+        if(y % x != 0)
+        {
+            printf("0 0\n");
+        }
+        else if(x == y)
+        {
+            printf("1 1\n");
+        }
+        else
+        {
+            printf("%d %d\n", 1, y / x);
+        }
+    }
+    return 0;
+}

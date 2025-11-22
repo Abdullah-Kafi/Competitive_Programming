@@ -1,0 +1,17 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    double a, b, c;
+    scanf("%lf %lf %lf", &a, &b, &c);
+    if(( ( a + b ) > c ) && ( ( b + c ) > a ) && ( ( c + a ) > b )) {
+        printf("Perimetro = %0.1lf\n", a + b + c);
+    }
+    else {
+        printf("Area = %0.1lf\n", ( ( a + b ) * c ) / 2);
+    }
+    return 0;
+}
+

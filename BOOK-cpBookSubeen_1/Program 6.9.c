@@ -1,0 +1,41 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main()
+{
+    ///My_soln:
+    int ara[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    for(int i = 0; i < 10; i++)
+    {
+        int temp = ara[9 - i];
+        ara[9 - i] = ara[i];
+        ara[i] = temp;
+    }
+
+    for(int i = 0; i < 10; i++)
+    {
+        printf("%d ", ara[i]);
+    }
+
+//    int ara1[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, ara2[10];
+//    for(int i = 0; i < 10; i++)
+//    {
+//        ara2[i] = ara1[9 - i];
+//    }
+//    for(int j = 0; j < 10; j++)
+//    {
+//        ara1[j] = ara2[9 - j];
+//    }
+//    for(int z = 0; z < 10; z++)
+//    {
+//        printf("%d\n", ara2[z]);
+//    }
+//    for(int k = 0; k < 10; k++)
+//    {
+//        printf("%d\n", ara1[k]);
+//    }
+    return 0;
+}

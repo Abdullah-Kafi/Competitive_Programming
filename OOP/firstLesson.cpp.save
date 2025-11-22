@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+///attributes : variable; behaviors : function
+
+class Account
+{
+    char accNo[20];
+    char accType[15];
+    double balance;
+
+public:
+    void account(const char* no, const char* type, double bl)
+    {
+        strcpy(accNo, no);
+        strcpy(accType, type);
+        balance = bl;
+    }
+    void showInfo()
+    {
+        cout << "Account Number : " << accNo << endl;
+        cout << "Account Type : " << accType << endl;
+        cout << "Account Balance : " << fixed << setprecision(6) << balance << endl;
+    }
+};
+
+int main()
+{
+    Account abulKalam, jerinaKhanam;
+
+    abulKalam.account("akc64", "Current", 20000.929);
+    jerinaKhanam.account("jkc75", "Current", 230000.219);
+
+    abulKalam.showInfo();
+    jerinaKhanam.showInfo();    
+
+    return 0;
+}

@@ -1,0 +1,55 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+///Important condition check in while loop for 'n--' and ''
+
+#include<stdio.h>
+
+int main()
+{
+    /* Certainly, Abdullah! Let's break down the explanation for the `n--` decrement operation more clearly.
+
+```c
+n = 10;
+while (n--) {
+    printf("%d\n", n);
+}
+```
+
+In the line `while (n--)`, `n--` is a post-decrement operator. Here's what happens step by step:
+
+1. The value of `n` (which is initially 10) is used in the condition check.
+2. The value of `n` is then decremented by 1.
+3. The original value of `n` (before the decrement) is used in the loop body.
+
+So, in each iteration of the loop, the condition checks whether the original value of `n` is non-zero. If it's non-zero, the loop executes; if it's zero, the loop exits.
+
+Let's go through the loop iterations:
+
+1. Iteration 1: `n` is 10 (condition true), decremented to 9.
+2. Iteration 2: `n` is 9 (condition true), decremented to 8.
+3. Iteration 3: `n` is 8 (condition true), decremented to 7.
+4. ... and so on, until:
+5. Iteration 10: `n` is 1 (condition true), decremented to 0.
+6. Iteration 11: `n` is 0 (condition false), the loop exits.
+
+So, the loop prints values from 9 to 0.
+
+*/
+    ///The post-decrement (`n--`) ensures that the original value is used in the condition check before the decrement operation takes place.
+    int n = 10;
+    while(n--)
+    {
+        printf("%d\n", n);
+    }
+    
+    printf("\n\n\n");
+    ///The loop will keep executing as long as the condition n = n - 1 evaluates to a non-zero value. The expression n = n - 1 not only decrements the value of n by 1 but also assigns the result back to n. The loop continues until n becomes 0, at which point the condition becomes false, and the loop exits.
+    n = 10;
+    while(n = n - 1)
+    {
+        printf("%d\n", n);
+    }
+    return 0;
+}
+

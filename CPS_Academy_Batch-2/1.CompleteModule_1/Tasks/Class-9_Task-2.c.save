@@ -1,0 +1,11 @@
+///In The Name of ALLAH
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d %d\n", )
+    return 0;
+}

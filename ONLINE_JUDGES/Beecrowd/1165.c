@@ -1,0 +1,26 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int t, n, count;
+    scanf("%d", &t);
+    while(t--) {
+        count = 0;
+        scanf("%d", &n);
+        for(int i = 2; i <= sqrt(n); i++) {
+            if(n % i == 0) {
+                count++;
+            }
+        }
+        if(count == 0) {
+            printf("%d eh primo\n", n);
+        }
+        else {
+            printf("%d nao eh primo\n", n);
+        }
+    }
+    return 0;
+}
+

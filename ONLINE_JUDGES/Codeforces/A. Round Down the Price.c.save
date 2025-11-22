@@ -1,0 +1,26 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+///A. Round Down the Price
+
+int main()
+{
+    freopen("input.txt", "r", stdin);int
+
+    int t, m, d;
+    scanf("%d", &t);
+    while(t--)
+    {
+        scanf("%d", &m);
+        d = m - 1;
+        int i = 1;
+        while(d >= 0)
+        {
+            i *= 10;
+            d = m - i;
+        }
+        printf("%d\n", m - i / 10);
+    }
+    return 0;
+}

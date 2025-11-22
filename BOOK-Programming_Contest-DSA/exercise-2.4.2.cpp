@@ -1,0 +1,103 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    /**
+            ****************Some Pattern Printing****************
+    */
+
+    int n; cin >> n;
+
+/**
+    *
+    * *
+    * * *
+*/
+//    for(int i = 1; i <= n; i++)
+//    {
+//        for(int j = 1; j <= i; j++)
+//            cout << "* ";
+//        cout << '\n';
+//    }
+
+/**
+    * * *
+      * *
+        *
+*/
+//    for(int i = n; i >= 1; i--)
+//    {
+//        for(int j = 1; j <= 2 * (n - i); j++)
+//            cout << ' ';
+//        for(int j = 1; j <= i; j++)
+//            cout << "* ";
+//        cout << '\n';
+//    }
+
+/**
+       *
+      ***
+     *****
+*/
+//    for(int i = 1; i <= n; i++)
+//    {
+//        for(int j = n - 1; j >= i; j--)
+//            cout << " ";
+//        for(int j = 1; j <= 2 * i - 1; j++)
+//            cout << "*";
+//        cout << '\n';
+//    }
+
+/**
+    12321
+     121
+      1
+*/
+//    for(int i = n; i >= 1; i--)
+//    {
+//        for(int j = n - 1; j >= i; j--)
+//            cout << " ";
+//
+//        int k = 2;
+//        for(int j = 1; j <= 2 * i - 1; j++)
+//        {
+//            if(j < (2 * i - 1) / 2 + 1)
+//                cout << j;
+//            else if(j > (2 * i - 1) / 2 + 1)
+//            {
+//                cout << j - k;
+//                k += 2;
+//            }
+//            else cout << j;
+//        }
+//        cout << '\n';
+//    }
+
+/**
+       1
+      121
+     12321
+*/
+//    for(int i = 1; i <= n; i++)
+//    {
+//        for(int j = i; j <= n - 1; j++)
+//            cout << " ";
+//
+//        int k = 2;
+//        for(int j = 1; j <= 2 * i - 1; j++)
+//        {
+//            if(j < (2 * i - 1) / 2 + 1)
+//                cout << j;
+//            else if(j > (2 * i - 1) / 2 + 1)
+//            {
+//                cout << j - k;
+//                k += 2;
+//            }
+//            else cout << j;
+//        }
+//        cout << '\n';
+//    }
+
+    return 0;
+}

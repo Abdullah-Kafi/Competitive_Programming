@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    int i, T;
+    f
+    scanf("%d", &T);
+    while(T--) {
+        scanf("%d", &N);
+        base = 0.143 * N
+    }
+    return 0;
+}

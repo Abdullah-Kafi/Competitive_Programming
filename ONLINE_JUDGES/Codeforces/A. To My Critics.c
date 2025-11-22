@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main() {
+    int i, T, a, b, c;
+    scanf("%d", &T);
+    for(i = 1; i <= T; i++) {
+        scanf("%d %d %d", &a, &b, &c);
+        if((a + b) >= 10 || (b + c) >= 10 || (c + a) >= 10) {
+            printf("YES\n");
+        }
+        else {
+            printf("NO\n");
+        }
+    }
+
+    return 0;
+}
+

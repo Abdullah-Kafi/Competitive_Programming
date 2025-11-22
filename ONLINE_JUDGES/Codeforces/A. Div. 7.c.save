@@ -1,0 +1,90 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+/******************************************************
+<----------------------------------------------------->
+<             Abdullah Kafi Chowdhury                 >
+<      International Islamic University Chittagong    >
+<             Department of CSE                       >
+<----------------------------------------------------->
+******************************************************/
+
+#include<stdio.h>
+#define testCase int __; scanf("%d", &__); while(__--)
+
+//void sort(int ar[], int n)
+//{
+//    for(int i = 0; i < n - 1; i++)
+//    {
+//        for(int j = i + 1; j < n; j++)
+//        {
+//            if(ar[i] > ar[j])
+//                swap(&ar[i], &ar[j]);
+//        }
+//    }
+//}
+
+//void swap(int* a, int* b)
+//{
+//    int t = *a;
+//    *a = *b;
+//    *b = t;
+//}
+
+void solve()
+{
+    int n, cnt1 = 0, cnt2 = 0; scanf("%d", &n);
+//    int temp1 = n;
+//    while(temp1)
+//    {
+//        cnt1++;
+//        temp1 /= 10;
+//    }
+//    if(n % 7)
+//    {
+//        int temp = ( n / 7 + 1) * 7;
+//        while(temp)
+//        {
+//            cnt2++;
+//            temp /= 10;
+//        }
+//
+//        if(cnt2 > cnt1)
+//            printf("%d\n", ( n / 7 - 1) * 7);
+//        else
+//            printf("%d\n", ( n / 7 + 1) * 7);
+//    }
+//    else printf("%d\n", n);
+
+//    for(int i = 7; i <= 994; i += 7)
+//    {
+//        if(n == i)
+//        {
+//            printf("%d\n", n);
+//            break;
+//        }
+//        else if(n > i)
+//        {
+//            printf("%d\n", i * 2)
+//        }
+//        else if(n < i)
+//    }        
+
+    int tmp = n % 7;
+    if(n - tmp)
+}
+
+int main()
+{
+    #ifndef ONLINE_JUDGE
+        /// freopen("input.txt", "r", stdin);
+    #endif
+
+    testCase
+        solve();
+
+    return 0;
+}
+
+
+

@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+/// Kadane's Algorithm for solving the Maximum Subarray
+
+int main()
+{
+    int n; cin >> n;
+    vector<int> v(n);
+
+    for(int i = 0; i < n; i++) cin >> v[i];
+
+    /// Kadane's Algorithm
+    int current_sum = 0, max_sum = INT_MIN;
+
+    for(int i = 0; i < n; i++)
+    {
+        current_sum += v[i];
+        max_sum = max(current_sum, max_sum);
+
+        if(current_sum < 0) current_sum = 0;
+    }
+
+    cout << max_sum << endl;
+
+    return 0;
+}

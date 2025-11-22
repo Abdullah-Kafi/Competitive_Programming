@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main()
+{
+    double num1, num2, sum, sub, mul;
+
+    double div;
+
+    printf("Please enter a number: ");
+    scanf("%lf", &num1);
+
+    printf("Please enter another number: ");
+    scanf("%lf", &num2);
+
+    sum = num1 + num2;
+    sub = num1 - num2;
+    mul = num1 * num2;
+    div = 1.0 * num1 / num2;
+
+    printf("%lf + %d = %d\n", num1, num2, sum);
+    printf("%d - %d = %d\n", num1, num2, sub);
+    printf("%d * %d = %d\n", num1, num2, mul);
+    printf("%d / %d = %lf\n", num1, num2, div);
+    return 0;
+}

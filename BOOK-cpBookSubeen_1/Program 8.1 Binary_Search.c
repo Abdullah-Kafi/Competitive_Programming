@@ -1,0 +1,75 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+///Binary Search
+int main()
+{
+    #ifndef ONLINE_JUDGE
+        ///freopen("input.txt", "r", stdin);
+    #endif
+
+    int ar[100], num, t;
+
+    int n; scanf("%d", &n);
+
+    for(int i = 0; i < n; i++)
+    {
+        scanf("%d", &ar[i]);
+    }
+
+    for(int i = 0; i < n; i++)
+    {
+        for(int j = i + 1; j < n; j++)
+        {
+            if(ar[i] > ar[j])
+            {
+                t = ar[i];
+                ar[i] = ar[j];
+                ar[j] = t;
+            }
+        }
+    }
+
+    printf("The Sorted Array is: ");
+    for(int i = 0; i < n; i++)
+    {
+        printf("%d ", ar[i]);
+    }
+
+    printf("\n");
+
+    int low_index = 0;
+    int high_index = n - 1;
+    int mid_index;
+
+    printf("Enter the Number that you want to find: ");
+
+    scanf("%d", &num);
+
+    while(low_index <= high_index)
+    {
+        mid_index = ( low_index + high_index ) / 2;
+        if(num == ar[mid_index])
+        {
+            break;
+        }
+        else if(num < ar[mid_index])
+        {
+            high_index = mid_index - 1;
+        }
+        else if(num > ar[mid_index])
+        {
+            low_index = mid_index + 1;
+        }
+    }
+    if(low_index > high_index)
+    {
+        printf("The number is not in the array.\n");
+    }
+    else
+    {
+        printf("The number is Founded and the index is: %d\n", mid_index);
+    }
+    return 0;
+}

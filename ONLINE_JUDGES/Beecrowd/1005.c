@@ -1,0 +1,16 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    double A, B, wavg;
+
+    scanf("%lf %lf", &A, &B);
+
+    wavg = ( A * 3.5 + B * 7.5) / ( 3.5 + 7.5 );
+
+    printf("MEDIA = %0.5lf\n", wavg);
+
+    return 0;
+}

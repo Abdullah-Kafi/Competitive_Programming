@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main()
+{
+    int x, y;
+
+    x = 1;
+    y = x; ///It is not a equation that, it will always true
+    x = 2;
+    //y = x;
+
+    printf("%d", y);
+
+    return 0;
+}

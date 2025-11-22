@@ -1,0 +1,38 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+#include<limits.h>
+///B. Atilla's Favorite Problem
+
+int main()
+{
+    ///freopen("input.txt", "r", stdin);
+
+    char alpha[26] = "abcdefghijklmnopqrstuvwxyz";
+    char s[101];
+    int t, n, max;
+    scanf("%d", &t);
+    while(t--)
+    {
+        max = INT_MIN;
+        scanf("%d", &n);
+        scanf("%s", s);
+        for(int i = 0; s[i]; i++)
+        {
+            if(s[i] > max)
+            {
+                max = s[i];
+            }
+        }
+        for(int i = 0; i < 26; i++)
+        {
+            if(alpha[i] == max)
+            {
+                printf("%d\n", i + 1);
+                break;
+            }
+        }
+    }
+    return 0;
+}

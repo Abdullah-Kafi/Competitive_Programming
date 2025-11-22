@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main() {
+    int a, b, c;
+    char[100];
+    
+    scanf("%d", &a);
+    scanf("% ")
+    return 0;
+}

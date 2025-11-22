@@ -1,0 +1,29 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main()
+{
+    #ifndef ONLINE_JUDGE
+        /// freopen("input.txt", "r", stdin);
+    #endif
+
+    int tc, a, b, c, d, cnt; scanf("%d", &tc);
+
+    while(tc--)
+    {
+        cnt = 0;
+        scanf("%d %d %d %d", &a, &b, &c, &d);
+        if(b > a)
+            cnt++;
+        if(c > a)
+            cnt++;
+        if(d > a)
+            cnt++;
+        printf("%d\n", cnt);
+    }
+
+    return 0;
+}
+

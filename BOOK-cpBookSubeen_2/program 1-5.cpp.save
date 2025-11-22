@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int num;
+    char c;
+    double d_num;
+    float f_num;
+    
+    cout << "Size of " << 
+    return 0;
+}

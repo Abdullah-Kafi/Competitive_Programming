@@ -1,0 +1,10 @@
+#include<stdio.h> 
+
+int main() {
+    int x;
+    scanf("%d", &X);
+    if((X += 7) > 170) {
+        
+    }
+    return 0;
+}

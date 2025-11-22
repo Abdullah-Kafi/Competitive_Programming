@@ -1,0 +1,61 @@
+/////In the name of ALLAH, The Most Gracious and The Most Merciful
+/////Praise be to ALLAH
+//
+//#include<stdio.h>
+//#include<math.h>
+/////A. Panoramix's Prediction
+//
+//int main()
+//{
+//    ///freopen("input.txt", "r", stdin);
+//
+//    int n, m;
+//    scanf("%d %d", &n, &m);
+//    n++;
+//    while(1)
+//    {
+//        int f = 0, f1 = 0;
+//        for(int i = 2; i <= sqrt(n); i++)
+//        {
+//            if(i % 2 == 0)
+//                f = 1;
+//        }
+//        if(!f && n == m)
+//        {
+//            f1 = 1;
+//            printf("YES\n");
+//            break;
+//        }
+//        n++;
+//    }
+//    if(!f1)
+//        printf("NO\n");
+//    return 0;
+//}
+
+
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() 
+{
+    ///freopen("input.txt", "r", stdin);
+    
+    int prime[15] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47};
+    int n, m;
+    scanf("%d %d", &n, &m);
+    for(int i = 0; i < 15; i++)
+    {
+        if(n == prime[i])
+        {
+            if(m == prime[i + 1])
+            {
+                f = 
+                printf("YES\n");
+            }
+        }
+    }
+    return 0;
+}

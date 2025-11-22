@@ -1,0 +1,18 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int t;
+    double a, b, c;
+
+    scanf("%d", &t);
+    while(t--) {
+        scanf("%lf %lf %lf", &a, &b, &c);
+        double avg = ( a * 2 + b * 3 + c * 5 ) / 10;
+        printf("%.1lf\n", avg);
+    }
+    return 0;
+}
+

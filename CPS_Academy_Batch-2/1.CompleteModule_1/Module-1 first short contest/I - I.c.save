@@ -1,0 +1,21 @@
+///In The Name of ALLAH
+///Alhamdulillah
+
+//Abdullah Kafi Chowdhury
+//International Islamic University Chittagong
+
+#include<stdio.h>
+
+int main() {
+    int n, a, count = 0;
+    for(int i = 1; i <= 10; i++) {
+        scanf("%d", &n);
+        a = n % 42;
+        if(a == 1 || a == 2 )
+    }
+            printf("%d\n", count);
+
+    return 0;
+}
+
+

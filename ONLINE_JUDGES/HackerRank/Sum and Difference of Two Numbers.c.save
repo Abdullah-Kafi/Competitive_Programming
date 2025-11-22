@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main() {
+    int num_1, num_2, Num_3, Num_4;
+    
+    scanf("%d %d", &num_1, &num_2);
+    scanf("%f %f", &Num_3, &Num_4);
+    
+    printf("%d %d\n", num_1 + num_2, num_1 - num_2);
+    printf("%0.1f %0.1f\n", Num_3 + Num_4, Num_3 - Num_4);
+    
+    return 0;
+}

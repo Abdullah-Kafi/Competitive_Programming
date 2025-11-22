@@ -1,0 +1,24 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+///A. Twin Permutations
+
+int main()
+{
+    ///freopen("input.txt", "r", stdin);
+
+    int t, n, ar[101];
+    scanf("%d", &t);
+    while(t--)
+    {
+        scanf("%d", &n);
+        for(int i = 0; i < n; i++)
+        {
+            scanf("%d", &ar[i]);
+            printf("%d ", 1 + n - ar[i]);
+        }
+        printf("\n");
+    }
+    return 0;
+}

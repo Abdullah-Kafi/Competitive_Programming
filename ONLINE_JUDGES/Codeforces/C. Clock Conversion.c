@@ -1,0 +1,87 @@
+/////In the name of ALLAH, The Most Gracious and The Most Merciful
+/////Praise be to ALLAH
+//
+//#include<stdio.h>
+/////C. Clock Conversion
+//
+//int main()
+//{
+//    ///freopen("input.txt", "r", stdin);
+//
+//    int t, h, m;
+//    scanf("%d", &t);
+//    while(t--)
+//    {
+//        scanf("%d:%d", &h, &m);
+//        if(h == 00)
+//        {
+//            if(0 <= m && m <= 9)
+//                printf("12:0%d AM\n", m);
+//            else
+//                printf("12:%d AM\n", m);
+//        }
+//        else if(h == 12)
+//        {
+//            if(0 <= m && m <= 9)
+//                printf("12:0%d PM\n", m);
+//            else
+//                printf("12:%d PM\n", m);
+//        }
+//        else if(0 <= h && h <= 9)
+//        {
+//            if(0 <= m && m <= 9)
+//                printf("0%d:0%d AM\n", h % 12, m);
+//            else
+//                printf("0%d:%d AM\n", h % 12, m);
+//        }
+//        else if(h == 10 || h == 11)
+//        {
+//            if(0 <= m && m <= 9)
+//                printf("%d:0%d AM\n", h % 12, m);
+//            else
+//                printf("%d:%d AM\n", h % 12, m);
+//        }
+//        else if(h > 12 && h <= 21)
+//        {
+//            if(0 <= m && m <= 9)
+//                printf("0%d:0%d PM\n", h % 12, m);
+//            else
+//                printf("0%d:%d PM\n", h % 12, m);
+//        }
+//        else if(h == 22 || h == 23)
+//        {
+//            if(0 <= m && m <= 9)
+//                printf("%d:0%d PM\n", h % 12, m);
+//            else
+//                printf("%d:%d PM\n", h % 12, m);
+//        }
+//    }
+//    return 0;
+//}
+
+
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main()
+{
+    ///freopen("input.txt", "r", stdin);
+
+    int t, h, m;
+    scanf("%d", &t);
+    while(t--)
+    {
+        scanf("%d:%d", &h, &m);
+        if(h == 12)
+            printf("12:%02d PM\n", m);
+        else if(h == 0)
+            printf("12:%02d AM\n", m);
+        else if(h > 12)
+            printf("%02d:%02d PM\n", h - 12, m);
+        else if(h < 12)
+            printf("%02d:%02d AM\n", h, m);
+    }
+    return 0;
+}

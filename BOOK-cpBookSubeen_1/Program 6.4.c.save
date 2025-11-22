@@ -1,0 +1,12 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main()
+{
+    int my_ara[10] = {5, 10, 15, 20};
+    
+    printf("%d")
+    return 0;
+}

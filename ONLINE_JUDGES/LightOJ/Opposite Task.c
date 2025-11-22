@@ -1,0 +1,45 @@
+///In The Name of ALLAH
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+//    int i, T, n;
+//    scanf("%d", &T);
+//    for(i = 1; i <= T; i++) {
+//        scanf("%d", &n);
+//        printf("%d %d\n", (n / 2), n - (n / 2));
+//    }
+    int t, n;
+    scanf("%d", &t);
+    while(t--)
+    {
+        scanf("%d", &n);
+        if(n <= 10)
+        {
+            printf("%d %d\n", 0, n);
+        }
+        else
+        {
+            printf("%d %d\n", n - 10, 10);
+        }
+    }
+    return 0;
+}
+
+///LightOJ's Solution::
+
+//#include <stdio.h>
+//int main() {
+//    int T, n;
+//    scanf("%d", &T);
+//    for (int i = 1; i <= T; i++) {
+//        scanf("%d", &n);
+//        if (n > 10) {
+//            printf("10 %d\n", n - 10);
+//        } else {
+//            printf("0 %d\n", n);
+//        }
+//    }
+//    return 0;
+//}

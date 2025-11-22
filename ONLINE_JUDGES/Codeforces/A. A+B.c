@@ -1,0 +1,15 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int a, b, t;
+    char ch;
+    scanf("%d", &t);
+    while(t--) {
+        scanf("%d%c%d", &a, &ch, &b);
+        printf("%d\n", a + b);
+    }
+    return 0;
+}

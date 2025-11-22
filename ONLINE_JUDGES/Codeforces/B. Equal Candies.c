@@ -1,0 +1,33 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+#include<limits.h>
+
+///B. Equal Candies
+
+int main()
+{
+    ///freopen("input.txt", "r", stdin);
+
+    int t, n, sum, min;
+    int ar[51];
+    scanf("%d", &t);
+    while(t--)
+    {
+        sum = 0;
+        min = INT_MAX;
+        scanf("%d", &n);
+        for(int i = 0; i < n; i++)
+        {
+            scanf("%d", &ar[i]);
+            sum += ar[i];
+            if(ar[i] < min)
+            {
+                min = ar[i];
+            }
+        }
+        printf("%d\n", sum - min * n);
+    }
+    return 0;
+}

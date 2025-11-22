@@ -1,0 +1,30 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int n, a, b, sumD, total = 0;
+    scanf("%d %d %d", &n, &a, &b);
+    for(int i = 1; i <= n; i++) {
+        sumD = 0;
+        if((i >= 1 && i <= 9) && (i >= a && i <= b)) {
+            total += i;
+        }
+        else {
+            while(1) {
+                sumD += ( i % 10 );
+                i /= 10;
+                if(i == 0) {
+                    break;
+                }
+            }
+        }
+        if(sumD >= a && sumD <= b) {
+            total += sumD;
+        }
+    }
+    printf("%d\n", total);
+    return 0;
+}
+

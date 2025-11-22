@@ -1,0 +1,48 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int month;
+    scanf("%d", &month);
+    if(month == 1) {
+        printf("January\n");
+    }
+    }
+    else if(month == 2) {
+        printf("February\n");
+    }
+    else if(month == 3) {
+        printf("January\n");
+    }
+    else if(month == 4) {
+        printf("January\n");
+    }
+    else if(month == 5) {
+        printf("January\n");
+    }
+    else if(month == 6) {
+        printf("January\n");
+    }
+    else if(month == 7) {
+        printf("January\n");
+    }
+    else if(month == 8) {
+        printf("January\n");
+    }
+    else if(month == 9) {
+        printf("January\n");
+    }
+    else if(month == 10) {
+        printf("January\n");
+    }
+    else if(month == 11) {
+        printf("January\n");
+    }
+    else if(month == 12) {
+        printf("January\n");
+    }
+    return 0;
+}
+

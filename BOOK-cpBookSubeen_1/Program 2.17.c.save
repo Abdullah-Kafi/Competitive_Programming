@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main()
+{
+    int sum of two number;
+    
+    scanf("%d", &sum of two number)
+    
+    return 0;
+}

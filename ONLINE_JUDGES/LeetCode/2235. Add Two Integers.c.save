@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main() {
+    int num1, num2, sum; //Declaring three variable called "num1", "num2" and "sum"
+    scanf("%d %d", &num1, &num2); //Taking input from the user
+    sum = num1 + num2; //Assigning the sum to the "sum" variable
+    printf("%d\n", sum); //Finally printing the summation
+    return 0;
+}

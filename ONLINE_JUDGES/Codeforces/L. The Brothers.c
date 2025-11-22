@@ -1,0 +1,20 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+#include<string.h>
+
+int main() {
+    char f1[100], s1[100], f2[100], s2[100];
+    scanf("%s %s", &f1, &s1);
+    scanf("%s %s", &f2, &s2);
+    if(strcmp(s1, s2) == 0) { /// To compare two C strings (char *), use strcmp()
+                            ///The function returns 0 when the strings are equal
+        printf("ARE Brothers\n");
+    }
+    else {
+        printf("NOT\n");
+    }
+    return 0;
+}
+

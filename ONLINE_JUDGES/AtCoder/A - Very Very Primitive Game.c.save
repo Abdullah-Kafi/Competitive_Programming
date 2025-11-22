@@ -1,0 +1,79 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+//    int t = a % 2, ao = b % 2;
+//    if( a == 1 && b == 0 && c == 0 ) {
+//        printf("Takahashi\n");
+//    }
+//    else if(a == 0 && b == 1 && c == 1) {
+//        printf("Aoki\n");
+//    }
+//    else if( c == 0 ) {
+//        if( ( t == 0 ) && ( ao != 0 ) ) {
+//            printf("Takahashi\n");
+//        }
+//        else if( ( t != 0 ) && ( ao == 0 ) ) {
+//            printf("Aoki\n");
+//        }
+//        else if( ( t == 0 ) && ( ao == 0 ) ) {
+//            printf("Aoki\n");
+//        }
+//        else if( ( t != 0 ) && ( ao != 0 ) ) {
+//            printf("Aoki\n");
+//        }
+//    }
+//    else {
+//        if( ( t == 0 ) && ( ao != 0 ) ) {
+//            printf("Takahashi\n");
+//        }
+//        else if( ( t != 0 ) && ( ao == 0 ) ) {
+//            printf("Aoki\n");
+//        }
+//        else if( ( t == 0 ) && ( ao == 0 ) ) {
+//            printf("Takahashi\n");
+//        }
+//        else if( ( t != 0 ) && ( ao != 0 ) ) {
+//            printf("Takahashi\n");
+//        }
+//    }
+
+    if(c == 0) {
+        while(1) {
+            a--;
+            if(b == 0) {
+                printf("Takahashi\n");
+                break;
+            }
+            b--;
+            if(b == 0) {
+                printf("Takahashi\n");
+                break;
+            }
+            if(a == 0) {
+                printf("Aoki\n");
+                break;
+            }
+        }
+    }
+    else {
+        while(1) {
+            b--;
+            a--;
+            if(a == 0) {
+                printf("Aoki\n");
+                break;
+            }
+            if(b == 0) {
+                printf("Takahashi\n");
+                break;
+            }
+        }
+    }
+    return 0;
+}
+

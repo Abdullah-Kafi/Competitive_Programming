@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x = 10;
+    int *p;
+
+    p = &x;
+
+    cout << "Value of x : " << x << "\n";
+
+    *p = 20;
+
+    cout << "Value of x : " << x << "\n";
+    cout << "Address of x : " << &x << "\n";
+    cout << "Value of p : " << p << "\n";
+
+    return 0;
+}
+
+

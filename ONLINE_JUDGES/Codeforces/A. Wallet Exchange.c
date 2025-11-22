@@ -1,0 +1,50 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+#define testCase int __; scanf("%d", &__); while(__--)
+
+//void sort(int ar[], int n)
+//{
+//    for(int i = 0; i < n - 1; i++)
+//    {
+//        for(int j = i + 1; j < n; j++)
+//        {
+//            if(ar[i] > ar[j])
+//                swap(&ar[i], &ar[j]);
+//        }
+//    }
+//}
+
+//void swap(int* a, int* b)
+//{
+//    int t = *a;
+//    *a = *b;
+//    *b = t;
+//}
+
+void solve()
+{
+    int a, b; scanf("%d %d", &a, &b);
+
+    if(a == b)
+        printf("Bob\n");
+    else if( ( a % 2 == 0 && b % 2 == 0) || ( a % 2 != 0 && b % 2 != 0 ))
+        printf("Bob\n");
+    else
+        printf("Alice\n");
+}
+
+int main()
+{
+    #ifndef ONLINE_JUDGE
+        /// freopen("input.txt", "r", stdin);
+    #endif
+
+    testCase
+        solve();
+
+    return 0;
+}
+
+

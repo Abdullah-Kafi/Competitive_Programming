@@ -1,0 +1,18 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    double num;
+    int count = 0;
+    for(int i = 1; i <= 6; i++) {
+        scanf("%lf", &num);
+        if(num > 0.0) {
+            count++;
+        }
+    }
+    printf("%d valores positivos\n", count);
+    return 0;
+}
+

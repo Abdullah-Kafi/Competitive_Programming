@@ -1,0 +1,35 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+///C. Rotation Matching
+
+int main()
+{
+    freopen("input.txt", "r", stdin);
+
+    int t, n;
+    scanf("%d", &t);
+    while(t--)
+    {
+        scanf("%d", &n);
+        int i = 1;
+        int x = n;
+        while(1)
+        {
+            x -= i;
+            if(x == 0)
+            {
+                printf("%d\n", n);
+                break;
+            }
+            else if(x < 0)
+            {
+                printf("%d\n", i);
+                break;
+            }
+            i *= 3;
+        }
+    }
+    return 0;
+}

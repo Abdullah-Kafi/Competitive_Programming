@@ -1,0 +1,25 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main()
+{
+    int t, r, w, max, ith;
+    scanf("%d", &t);
+    while(t--)
+    {
+        max = 0;
+        for(int i = 1; i <= 22; i++)
+        {
+            scanf("%d %d", &r, &w);
+            if( ( r * 1 + w * 20 ) > max )
+            {
+                max = r * 1 + w * 20;
+                ith = i;
+            }
+        }
+        printf("%d\n", ith);
+    }
+    return 0;
+}

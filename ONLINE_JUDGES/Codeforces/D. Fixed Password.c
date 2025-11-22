@@ -1,0 +1,20 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int n;
+    while(1) {
+        scanf("%d", &n);
+        if(n == 1999) {
+            printf("Correct\n");
+            break;
+        }
+        else {
+            printf("Wrong\n");
+        }
+    }
+    return 0;
+}
+

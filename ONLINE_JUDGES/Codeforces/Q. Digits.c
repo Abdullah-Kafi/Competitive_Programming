@@ -1,0 +1,22 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int t, n;
+    scanf("%d", &t);
+    while(t--) {
+        scanf("%d", &n);
+        while(1) {
+            printf("%d ", n % 10);
+            n /= 10;
+            if(n == 0) {
+                break;
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+

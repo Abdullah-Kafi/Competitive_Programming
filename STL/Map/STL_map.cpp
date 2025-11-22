@@ -1,0 +1,95 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define el "\n"
+
+int main()
+{
+    /// map<key_value, mapped_value> map_name;
+
+    /// creating a map of string to integers:
+    //map<string, int> mp;
+
+    /// One line map declaration
+    map<string, int> mp = { { "one", 1 }, { "two", 2 }, { "three", 3 } };
+
+    /// Printing using for each loop:
+    for(auto i: mp) cout << i.first << " " << i.second << el;
+
+    /// Inserting some values into the map
+//    mp["one"] = 1;
+//    mp["two"] = 2;
+//    mp[ "three" ] = 3;
+
+    /// get an iterator pointing to the first element in the map
+    /// iterator->first indicates to the key_value of the element
+    /// iterator->second indicates to the mapped_value of the element
+    //map<string, int> :: iterator it;
+
+    /// iterate through the map and print the elements
+//    cout << "Key" << "\t" << "value" << el;
+//    for(auto it = mp.begin(); it != mp.end(); it++)
+//    {
+//        cout << it->first << "\t" << it->second << el;
+//    }
+//    cout << el;
+
+    //cout << "Size of the map is: " << mp.size() << el;
+
+    /// check if a key is in the map
+    if(mp.count("two")) cout << "key 'two' is in the map" << el;
+    else cout << "key 'two' is not in the map" << el;
+
+    /// empty map container
+    map<int, int> myMap;
+
+    /// inserting some value as pair
+    myMap.insert(pair<int, int>(1, 40));
+    myMap.insert(pair<int, int>(2, 50));
+    myMap.insert(pair<int, int>(3, 60));
+    myMap.insert(pair<int, int>(4, 80));
+    myMap.insert(pair<int, int>(5, 50));
+    myMap.insert(pair<int, int>(6, 70));
+
+    /// another way to insert a value in map : map_name[key_value] = mapped_value
+    myMap[7] = 30;
+
+    /// printing map
+    /// map<int, int> :: iterator it;
+    cout << "My Map is:" << el;
+    cout << "Key" << "\t" << "element" << el;
+    for(auto it = myMap.begin(); it != myMap.end(); it++) cout << it->first << "\t" << it->second << el;
+
+    /// Assigning one map to another:
+    map<int, int> yourMap(myMap.begin(), myMap.end());
+
+    cout << "Your Map is:" << el;
+    cout << "Key" << "\t" << "element" << el;
+    for(auto i = yourMap.begin(); i != yourMap.end(); i++)
+        cout << i->first << "\t" << i->second << el;
+
+    /// remove all element up to element with key = 3 in yourMap
+    /// remove elements with key value less than 3
+    yourMap.erase(yourMap.begin(), yourMap.find(3));
+    cout << "After removing elements with key value less than 3: " << el;
+    cout << "Key" << "\t" << "element" << el;
+    for(auto it = yourMap.begin(); it != yourMap.end(); it++)
+        cout << it->first << "\t" << it->second << el;
+
+    /// found an element with key_value
+    auto f = myMap.find(2);
+    cout << "Element found with key value 2: " << el;
+    cout << "Key" << "\t" << "element" << el;
+    cout << f->first << "\t" << f->second << el;
+
+    /// Insert Elements from Given Range
+    map<string, string> nameWithID;
+
+    vector<pair<string, string>> v = { { "Kafi", "C241036" }, { "Abdul Ahad", "C241008" }, { "Tanjim", "C241013" } };
+
+    nameWithID.insert(v.begin(), v.end());
+
+    for(auto i: nameWithID) cout << "Name: " << i.first << ", ID: " << i.second << el;
+
+    return 0;
+}

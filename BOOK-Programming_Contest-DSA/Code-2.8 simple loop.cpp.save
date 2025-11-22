@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ///print from 1 to 10:
+    for(int i = 1; i <= 10; i++) cout << i << ' ';
+    cout << '\n';
+
+    ///print from 10 to 1:
+    for(int i = 10; i >= 1; i--) cout << i << ' ';
+    cout << '\n';
+
+    ///prints odd numbers from 1 to 10:
+    for(int i = 1; i <= 10; i += 2) cout << i << ' ';
+    cout << '\n';
+    
+    int i = 5; 
+    ///prints 10, 12, 14
+    while()
+    return 0;
+}

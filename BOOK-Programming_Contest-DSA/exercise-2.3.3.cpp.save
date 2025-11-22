@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+//    int a, b;
+//    cin >> a >> b;
+//
+//    if(a > b) cout << a << " is greater than " << b << endl;
+//    else cout << b << " is greater than " << a << endl;
+
+    int a, b, c; cin >> a >> b >> c;
+    
+    if(a > b && a > c) cout << a << " is the greatest among three" << '\n';
+    else if(b > a && b > c) cout << b << " is the greatest among three" << '\n';
+    
+
+    return 0;
+}

@@ -1,0 +1,61 @@
+///A Program to find Quotient & Remainder without using modulus operator
+///My Code:
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//
+//    int Dividend, Divisor, Quotient, Remainder;
+//    printf("Enter Dividend : ");
+//    scanf("%d", &Dividend);
+//
+//    printf("Enter Divisor : ");
+//    scanf("%d", &Divisor);
+//
+//    Quotient = Dividend / Divisor;
+//
+//    Remainder = Dividend - (Quotient * Divisor);
+//
+//    printf("Quotient is : %d \n", Quotient);
+//
+//    printf("Remainder is : %d \n", Remainder);
+//
+//    return 0;
+//}
+
+///ChatGPT's Code::
+#include <stdio.h>
+
+int main() {
+    int Dividend, Divisor, Quotient, Remainder;
+
+    // Input
+    printf("Enter Dividend : ");
+    scanf("%d", &Dividend);
+
+    printf("Enter Divisor : ");
+    scanf("%d", &Divisor);
+
+    // Handling negative numbers
+    if (Divisor != 0) {
+        Quotient = Dividend / Divisor;
+        Remainder = Dividend % Divisor;
+
+        // Adjust quotient and remainder for negative Dividend
+        if (Dividend < 0 && Remainder != 0) {
+            Quotient--;
+            Remainder += Divisor;
+        }
+    } else {
+        printf("Error: Division by zero\n");
+        return 1;  // Return non-zero to indicate an error
+    }
+
+    // Output
+    printf("Quotient is : %d \n", Quotient);
+    printf("Remainder is : %d \n", Remainder);
+
+    return 0;
+}
+

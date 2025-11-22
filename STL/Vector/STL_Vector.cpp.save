@@ -1,0 +1,240 @@
+///Class - 1 ( Almost Everything about STL Vector )
+#include<bits/stdc++.h>
+using namespace std;
+
+#define el "\n"
+
+int main()
+{
+    vector<int> v; /// vector<dataType> vectorName;
+    ///vector<int> newVector;
+
+    ///push_back() : to assign element in the vector::
+    v.push_back(10);   /// index : 0
+    v.push_back(2);   /// index :  1
+    v.push_back(2);   /// index : 2
+    v.push_back(6);   /// index :  3
+    v.push_back(4); /// index :  4
+    v.push_back(34);  /// index :  5
+    v.push_back(5);   /// index :  6
+
+//    for(int i = 0; i < v.size(); i++) cout << v[i] << el;
+
+    /// can assign element manually after push_back::
+//    v[2] = 3;
+//    cout << v[2] << el;
+
+    ///v.size() : return the size of the vector::
+//    cout << v.size() << el;
+    ///Printing Vector::
+//    for(int i = 0; i < v.size(); i++) cout << v[i] << " ";
+//    cout << el;
+
+    ///Taking user input to Vector::
+    ///Method 1: in a loop take an integer an push_back it
+//    int n; cin >> n;
+//    for(int i = 0; i < n; i++)
+//    {
+//        int a; cin >> a; ///take input of each element and immediately push_back that element
+//        v.push_back(a);
+//    }
+
+//    for(int i = 0; i < v.size(); i++) cout << v[i] << " ";
+//    cout << el;
+
+//    cout << v.size() << el;
+
+//    for(int i = 0; i < n; i++) cout << v[i] << " ";
+//    cout << el;
+
+    /// Initializing vector::
+    /// value will be assigning from 0 index in this type of initialization:
+//    v = {2, 3, 4, 5, 6};
+//    cout << v.size() << el;
+//    for(int i = 0; i < v.size(); i++) cout << v[i] << " ";
+//    cout << el;
+
+//    v.clear();
+    ///Remove all element from the vector
+    ///then the size of the vector becomes zero
+
+//    cout << v.size() << el;
+
+//    cout << v.empty() << el;
+    /// Return 1 if empty otherwise 0
+
+    ///v.resize(n) : to fix the size of the vector
+    /// the size of the vector is now 'n', if some element exist then other will be 0
+    ///for this, we get space/index in the vector, and can access the space/index
+
+//    v.resize(3);
+//    cout << v.size() << el;
+//    for(int i = 0; i < v.size(); i++) cout << v[i] << " ";
+//    cout << el;
+
+    ///Taking user input to Vector::
+    ///Method 2: previously declare the size of the vector using resize()
+//    v.resize(100);
+    ///Because of resize, we get space for accessing
+//    int n; cin >> n;
+//    for(int i = 0; i < n; i++) cin >> v[i];
+//    for(int i = 0; i < n; i++) cout << v[i] << " ";
+//    cout << el;
+
+    ///vector declaring with size: as like array : vector<int> vectorName(size)
+    ///initially all value are assigned with zero(0)
+    ///vector<int> vec(10);
+
+    /// vector<int> vectorName(size, value)
+//    vector<int> vec(10, 4);
+    /// Now, all value are assigned with 4 -- vector<int> vectorName(size, value)
+//    cout << vec.size() << el;
+//    for(int i = 0; i < vec.size(); i++) cout << vec[i] << " ";
+//    cout << el;
+
+    ///Assigning one vector to another : size and elements are assigned:
+    vector<int> vec = {5, 6, 1, 4, 2};
+    vector<int> temp;
+
+    temp = vec;
+
+//    for(int i = 0; i < temp.size(); i++) cout << temp[i] << " ";
+//    cout << el;
+
+    /// pointer : holds the address of a variable
+    /// Iterator :: holds pointer
+    /// vector.begin() :: a pointer, holds the address of 0 index
+    /// vector.end() :: a pointer, holds the address of (last + 1) index
+
+    ///declaration of vector iterator : vector<dataType> :: iterator iteratorName;
+//    vector<int> :: iterator it;
+//    for(it = vec.begin(); it != vec.end(); it++)
+//    {
+//        cout << *it << " ";
+//    }
+//    cout << el;
+
+    /// for each loop : for(int x : vectorName) cout << x << " "; 'x' is a container
+    /// for(auto x : vectorName) cout << x << " "; auto detect the type of vector
+//    for(int u : vec)
+//    {
+//        u += 2;
+//        cout << u << " ";
+//    }
+//    cout << el;
+
+//    for(auto x : v) cout << x << " ";
+//    cout << el;
+
+    /// Sort Ascending : sort(vector.begin(), vector.end())
+//    sort(v.begin(), v.end());
+
+    /// vector.begin() + 0 : pointer of index 0
+    /// vector.begin() + 1 : pointer of index 1
+    /// vector.begin() + 2 : pointer of index 2
+    /// vector.begin() + 3 : pointer of index 3
+    /// vector.begin() + 4 : pointer of index 4
+
+    /// vector.end() : pointer of last index + 1
+    /// vector.end() - 1 : pointer of last index
+    /// vector.end() - 2 : pointer of last index - 1
+    /// vector.end() - 3 : pointer of last index - 2
+
+    /// sort decreasing : greater<int>() function, comparator.
+    /// sort decreasing : sort(vector.rbegin(), vector.rend())
+//    sort(v.begin(), v.end(), greater<int>());
+//    sort(v.rbegin(), v.rend());
+
+    /// Reverse a vector : reverse(v.begin(), v.end())
+//    reverse(v.begin(), v.end());
+
+//    for(auto u : v) cout << u << " ";
+
+    /// vector.back() : last element of a vector, O(1)
+    /// vector.pop_back() : delete the last element of a vector, O(1)
+
+//    cout << v.back() << el; /// O(1)
+//    v.pop_back(); /// O(1)
+
+    /// delete an element : vector.erase( pointer of that index ), O(n)
+    /*
+
+    v.erase(v.begin() + 3); /// O(n)
+
+    for(auto u : v) cout << u << " ";
+
+    reverse(v.begin(), v.end());
+
+    while(!v.empty())
+    {
+        cout << v.back() << " ";
+        v.pop_back();
+    }
+    */
+
+    /// Unique value of a vector:
+
+    vector<int> vr = {10, 3, 3, 6, 6, 7, 9, 1};
+//    sort(vr.begin(), vr.end()); /// O(nlog2(n))
+
+    /// unique(vector.begin(), vector.end()) :
+    /// *** returns the pointer of(last unique value + 1)'s index
+    /// So, to find the "number of unique element" value we have to subtract the pointer of begin() from that
+    /// number of unique element = sz
+    int sz;
+//    sz = unique(vr.begin(), vr.end()) - vr.begin(); /// O(n)
+
+//    for(int i = 0; i < sz; i++) cout << vr[i] << " ";
+//    cout << el;
+
+    vr = {1, 3, 2, 5, 7, 9, 10};
+
+    ///Find Maximum Element & Minimum element : O(n)
+    vector<int> :: iterator it = max_element(vr.begin(), vr.end());
+    cout << *it << el;
+    ///*** max_element() : returns the pointer of the maximum element
+    /// maximum element's pointer - beginning element's pointer = index of maximum element
+    int indOfMaxElement = max_element(vr.begin(), vr.end()) - vr.begin();
+    cout << indOfMaxElement << el;
+
+    vector<int> :: iterator i = min_element(vr.begin(), vr.end());
+    cout << *i << el;
+
+    int indOfMinElement = min_element(vr.begin(), vr.end()) - vr.begin();
+    cout << indOfMinElement << el;
+
+    ///Vector of vector: 2D Vector:
+    vector< vector<int> > v2D;
+
+    vector<int> v1 = {1, 2, 4};
+    vector<int> v2 {2, 3, 4, 6, 8};
+
+    v2D.push_back(v1);
+    v2D.push_back(v2);
+
+//    for(auto u : v2D)
+//    {
+//        for(auto g : u) cout << g << " ";
+//        cout << el;
+//    }
+
+    /// std::lower_bound()
+    /// lower_bound would point to the first number that is greater than or equal to 100, or it would return num.end() if no such number exists
+    vector<int> num {1, 2, 4, 5, 6, 10, 2, 3, 234};
+
+    // Sort the vector for correct `lower_bound` behavior
+    sort(num.begin(), num.end());
+    
+    // Find the first element that is >= 100
+    auto f = lower_bound(num.begin(), num.end(), 100);
+    
+    // Check if lower_bound returned a valid iterator
+    if (f != num.end()) {
+        cout << *f << endl; // Should output the first element >= 100 if it exists
+        if(*f == 100) cout << "Found" << endl;
+        else cout << "Not found" << endl;
+    } else {
+        cout << "100 not found and is larger than all elements." << endl;
+    }
+    return 0;
+}

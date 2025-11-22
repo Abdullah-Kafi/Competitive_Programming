@@ -1,0 +1,80 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+long double power(int n, int m)
+{
+    long double mul = 1;
+    for(int i = 1; i <= m; i++)
+        mul *= n;
+    return mul;
+}
+
+int main()
+{
+    long long sum = 0, mul;
+    int n; cin >> n;
+
+    /// 1 + 2 + 3 + ... + n
+    for(int i = 1; i <= n; i++)
+        sum += i;
+    cout << sum << '\n';
+
+    /// 1^2 + 2^2 + 3^2 + ... + n^2
+//    for(int i = 1; i <= n; i++)
+//        sum += i * i;
+//    cout << sum << '\n';
+
+    /// 1^1 + 2^2 + 3^3 + ... + n^n
+//    for(int i = 1; i <= n; i++)
+//        sum += power(i, i);
+//    cout << sum << '\n';
+
+    /// 1 + (2 + 3) + (4 + 5 + 6) + ... + nth term
+//    int j = 1;
+//    for(int i = 1; i <= n; i++)
+//    {
+//        for(int z = 1; z <= i; z++, j++)
+//            sum += j;
+//    }
+//    cout << sum << '\n';
+
+    /// 1 - 2 + 3 - 4 + 5 ... nth term
+//    for(int i = 1; i <= n; i++)
+//    {
+//        if(i % 2 == 0)
+//            sum += i * -1;
+//        else
+//            sum += i;
+//    }
+//    cout << sum << '\n';
+
+    ///1 + (2 + 3 * 4) + (5 + 6 * 7 + 8 * 9 * 10) + ... + nth term
+//    int j = 1;
+//    for(int i = 1; i <= n; i++)
+//    {
+//        for(int z = 1; z <= i; z++, j++)
+//        {
+//            if(z == 1) sum += j;
+//            else
+//            {
+//                mul = 1;
+//                for(int k = 1; k <= z; k++, j++)
+//                {
+//                    mul *= j;
+//                }
+//                sum += mul;
+//                j--;
+//            }
+//        }
+//    }
+//    cout << sum << '\n';
+
+    /// 1 * n + 2 * (n - 1) + 3 * (n - 2) + ... + n * 1
+//    for(int i = 1, j = n; i <= n; i++, j--)
+//    {
+//        sum += i * j;
+//    }
+//    cout << sum << '\n';
+
+    return 0;
+}

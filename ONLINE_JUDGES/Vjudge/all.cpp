@@ -1,0 +1,54 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+
+#define el "\n"
+#define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define testCase int __; cin >> __; while(__--)
+#define fraction() cout.unsetf(ios::floatfield); cout.precision(10); cout.setf(ios::fixed,ios::floatfield);
+
+void solve()
+{
+    vector<int> v;
+    int cnt = 0;
+    int n, k; cin >> n >> k;
+    v.resize(n);
+    for(int i = 0; i < n; i++)
+        cin >> v[i];
+    if(v[0] > k && v[n - 1] > k) cout << 0 << "\n";
+    else
+    {
+        for(int i = 0; i < n; i++)
+        {
+            if(v[i] <= k) cnt++;
+            else break;
+        }
+        if(n == cnt)
+        {
+            cout << cnt << "\n";
+            return;
+        }
+        else
+        {
+            for(int i = n - 1; i >= 0; i--)
+            {
+                if(v[i] <= k) cnt++;
+                else break;
+            }
+        }
+        cout << cnt << "\n";
+    }
+}
+
+int main()
+{
+    optimize();
+
+    //testCase
+        solve();
+
+    return 0;
+}

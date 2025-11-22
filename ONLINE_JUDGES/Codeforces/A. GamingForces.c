@@ -1,0 +1,27 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+///A. GamingForces
+
+int main()
+{
+    ///freopen("input.txt", "r", stdin);
+
+    int t, n, ar[110];
+    scanf("%d", &t);
+    while(t--)
+    {
+        int sum = 0, count = 0;
+        scanf("%d", &n);
+        for(int i = 0; i < n; i++)
+        {
+            scanf("%d", &ar[i]);
+//            if(ar[i] == 1)
+//                count++;
+            count += (ar[i] == 1);
+        }
+        printf("%d\n", n - count / 2);
+    }
+    return 0;
+}

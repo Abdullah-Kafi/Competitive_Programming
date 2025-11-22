@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main() {
+    int R;
+    scanf("%d", &R);
+    if(R <= 50) {
+        printf("100\n");
+    }
+    else if()
+    return 0;
+}

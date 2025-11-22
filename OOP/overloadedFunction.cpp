@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+int add(int x, int y)
+{
+    return x + y;
+}
+
+double add(double x, double y)
+{
+    return x + y;
+}
+
+double add(int x, double y)
+{
+    return x + y;
+}
+
+double add(double x, int y)
+{
+    return x + y;
+}
+
+int main()
+{
+    cout << add(10, 10) << endl;
+    cout << add(10.57, 10.59) << endl;
+    cout << add(10, 10.59) << endl;
+    cout << add(10.91, 10) << endl;
+
+    return 0;
+}

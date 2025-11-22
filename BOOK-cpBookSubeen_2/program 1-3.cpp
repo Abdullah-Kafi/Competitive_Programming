@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    char ch1 = 'A', ch2 = 'B';
+    int n1 = 100, n2 = 1000;
+
+    cout << "Value of ch1 = " << ch1 << endl;
+    cout << "Address of ch1 = " << &ch1 << endl;
+
+    cout << "Value of ch2 = " << ch2 << endl;
+    cout << "Address of ch2 = " << &ch2 << endl;
+
+    cout << "Value of n1 = " << n1 << endl;
+    cout << "Address of n1 = " << &n1 << endl;
+
+    cout << "Value of n2 = " << n2 << endl;
+    cout << "Address of n2 = " << &n2 << endl;
+    return 0;
+}

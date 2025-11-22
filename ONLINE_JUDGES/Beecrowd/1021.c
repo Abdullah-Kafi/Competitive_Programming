@@ -1,0 +1,37 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+
+int main() {
+    int a, b, c, d, e, f, g;
+    double n;
+    scanf("%lf", &n);
+    int integer = (int)n, doubleNum = ( n - integer ) * 100;
+    a = integer / 100;
+    integer %= 100;
+    b = integer / 50;
+    integer %= 50;
+    c = integer / 20;
+    integer %= 20;
+    d = integer / 10;
+    integer %= 10;
+    e = integer / 5;
+    integer %= 5;
+    f = integer / 2;
+    integer %= 2;
+    printf("NOTAS:\n%d nota(s) de R$ 100.00\n%d nota(s) de R$ 50.00\n%d nota(s) de R$ 20.00\n%d nota(s) de R$ 10.00\n%d nota(s) de R$ 5.00\n%d nota(s) de R$ 2.00\n", a, b, c, d, e, f);
+    g = integer / 1;
+    a = doubleNum / 50;
+    doubleNum %= 50;
+    b = doubleNum / 25;
+    doubleNum %= 25;
+    c = doubleNum / 10;
+    doubleNum %= 10;
+    d = doubleNum / 5;
+    doubleNum %= 5;
+    e = doubleNum / 1;
+    printf("MOEDAS:\n%d moeda(s) de R$ 1.00\n%d moeda(s) de R$ 0.50\n%d moeda(s) de R$ 0.25\n%d moeda(s) de R$ 0.10\n%d moeda(s) de R$ 0.05\n%d moeda(s) de R$ 0.01\n", g, a, b, c, d, e);
+    return 0;
+}
+
