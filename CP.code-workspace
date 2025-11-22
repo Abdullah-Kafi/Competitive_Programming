@@ -1,12 +1,12 @@
 {
     "folders": [
 		{
-			"name": "CodeChef",
-			"path": "ONLINE_JUDGES/CodeChef"
-		},
-		{
 			"name": "Codeforces",
 			"path": "ONLINE_JUDGES/Codeforces"
+		},
+		{
+			"name": "CodeChef",
+			"path": "ONLINE_JUDGES/CodeChef"
 		},
 		{
 			"name": "AtCoder",

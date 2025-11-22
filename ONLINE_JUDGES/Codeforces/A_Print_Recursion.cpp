@@ -17,9 +17,9 @@ using ll = long long;
 void print(int n)
 {
     if(n == 0) return;
-    else print(n - 1);
-    cout << "I love Recursion" << endl;
-    return;
+    print(n - 1);
+    cout << el;
+    cout << "I love Recursion";
 }
 
 void solve()
