@@ -1,0 +1,71 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<stdio.h>
+#include<string.h>
+#include<limits.h>
+
+int main()
+{
+    ///freopen("input.txt", "r", stdin);
+
+    ///A
+//    int n;
+//    scanf("%d", &n);
+//    if(n % 2 == 0)
+//        printf("%d\n", n / 2);
+//    else
+//        printf("%d\n", n / 2 + 1);
+
+    ///B
+//    char s[110], temp;
+//    scanf("%s", s);
+//    int len = strlen(s);
+//    for(int i = 0; i < len; i += 2)
+//    {
+//        temp = s[i + 1];
+//        s[i + 1] = s[i];
+//        s[i] = temp;
+//    }
+//    printf("%s", s);
+
+    ///E
+    int t, n;
+    int ar[200005];
+    scanf("%d", &t);
+    while(t--)
+    {
+//        int max = INT_MIN, min = INT_MAX;
+        scanf("%d", &n);
+        for(int i = 0; i < n; i++)
+        {
+            scanf("%d", &ar[i]);
+//            if(ar[i] > max)
+//                max = ar[i];
+//            else if(ar[i] < min)
+//                min = ar[i];
+        }
+        int max = ar[0], min = ar[0];
+
+        for(int i = 0; i < n; i++)
+        {
+            if(ar[i] < min)
+                min = ar[i];
+            else if(ar[i] > max)
+                max = ar[i];
+        }
+        if(max - min >= n)
+            printf("YES\n%d %d\n", 1, n);
+        else
+            printf("NO\n");
+    }
+
+    ///C
+//    double a, b;
+//    scanf("%lf %lf", &a, &b);
+//    if(a <= b)
+//        printf("%lf", a);
+//    else
+//        printf("%lf", b);
+    return 0;
+}

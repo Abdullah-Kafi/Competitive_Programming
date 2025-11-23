@@ -1,0 +1,49 @@
+///In the name of ALLAH, The Most Gracious and The Most Merciful
+///Praise be to ALLAH
+
+#include<bits/stdc++.h>
+using namespace std;
+
+const int sz = 0;
+int ar[sz];
+
+using ll = long long;
+
+#define el "\n"
+#define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define testCase int __; cin >> __; while(__--)
+#define fraction() cout.unsetf(ios::floatfield); cout.precision(10); cout.setf(ios::fixed,ios::floatfield);
+
+void solve()
+{
+    int n; cin >> n;
+    vector<int> v(n + 10), frq(101, 0);
+
+    for(int i = 1; i <= n; i++)
+    {
+        cin >> v[i];
+        frq[v[i]]++;
+    }
+
+    int mx = *max_element(frq.begin(), frq.end());
+
+    int cntOne = 0;
+    for(int i = 1; i <= 100; i++)
+    {
+        if(frq[i] == 1) cntOne++;
+    }
+
+    if(cntOne == 1) cout << 1 << el;
+    else if(mx >= 2) cout << cntOne + (mx / 2) - 1 << el;
+    else if(mx == 1) cout << cntOne << el;
+    else cout << cntOne + (mx / 2) << el;
+}
+int main()
+{
+    optimize();
+    
+    //testCase
+        solve();
+
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+
+usi
+int main() {
+    printf("IIUC CPS\n"); ///Printing IIUC CPS
+
+    printf("6 + 2 = %d\n\n", 8);
+
+    int a;
+    scanf("%d", &a);
+    printf("%d", a);
+    
+    cin 
+
+    return 0;
+}
