@@ -29,18 +29,19 @@ typedef pair<ll, ll> pll;
 #define fraction() cout.unsetf(ios::floatfield); cout.precision(10); cout.setf(ios::fixed,ios::floatfield);
 
 vi v(1000);
+int n;
 
 ll Sum(int i) 
 {
-    if(i == -1) return 0;
-    return Sum(i - 1) + v[i];
+    if(i == n) return 0;
+    return Sum(i + 1) + v[i];
 }
 
 void solve()
 {
-    int n; cin >> n; 
+    cin >> n; 
     for(int i = 0; i < n; i++) cin >> v[i];
-    cout << Sum(n - 1) << el;
+    cout << Sum(0) << el;
 }
 int main()
 {
