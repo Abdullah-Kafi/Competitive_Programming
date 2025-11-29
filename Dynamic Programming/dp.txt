@@ -1,0 +1,10 @@
+/// 3 steps to solve dp problem(from recursion)::
+
+// 1. memoization -- 3 steps
+    // 1. create dp table - dimension (number of parameters in recursive function) & initialize
+    // 2. after base case put condition
+    // 3. save value in dp table before returning
+// 2. overlapping subproblem
+// 3. optimal substructue
+
+// 29-Nov: dp-lec-1Upto1hr09min
