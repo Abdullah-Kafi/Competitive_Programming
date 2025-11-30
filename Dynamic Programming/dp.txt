@@ -7,4 +7,5 @@
 // 2. overlapping subproblem
 // 3. optimal substructue
 
-// 29-Nov: dp-lec-1Upto1hr09min
+// 29-Nov: Topic 4 (Part 1): Basics of DP - Upto1hr09min
+// 30-Nov: Topic 4 (Part 1): Basics of DP - Completed
