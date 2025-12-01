@@ -28,41 +28,17 @@ typedef pair<ll, ll> pll;
 #define testCase int __; cin >> __; while(__--)
 #define fraction() cout.unsetf(ios::floatfield); cout.precision(10); cout.setf(ios::fixed,ios::floatfield);
 
-int mat[11][11];
-int n, m;
-int dp[20][20]; // array fill up korte je poriman time lage - time Complexity - O(n * m)
-
-int maxSum(int i, int j)
-{
-    if(i == n || j == m) return INT_MIN;
-    if(i == n - 1 && j == m - 1) return mat[i][j];
-    if(dp[i][j] != INT_MAX) return dp[i][j]; 
-
-    int path_1, path_2;
-    if(i < n) path_1 = maxSum(i + 1, j);
-    if(j < m) path_2 = maxSum(i, j + 1);
-
-    return dp[i][j] = mat[i][j] + max(path_1, path_2);
-}
-
 void solve()
 {
-    for(int i = 0; i < 20; i++)
-    {
-        for(int j = 0; j < 20; j++) dp[i][j] = INT_MAX;
-    }
-    cin >> n >> m;
-    for(int i = 0; i < n; i++)
-    {
-        for(int j = 0; j < m; j++) cin >> mat[i][j];
-    }
-    cout << maxSum(0, 0) << el;
-} 
+    int n, x; cin >> n >> x;
+    
+    for(int i = 0; i < n; i++) cin >> v[i];
+}
 int main()
 {
     optimize();
     
-    //testCase
+    testCase
         solve();
 
     return 0;
