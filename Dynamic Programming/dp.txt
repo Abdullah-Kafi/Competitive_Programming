@@ -1,15 +1,23 @@
 --> 3 steps to solve dp problem(from recursion)::
 
-1. memoization -- 3 steps
+1. memoization --> 3 steps
     1. create dp table - dimension (number of parameters in recursive function) & initialize
     2. after base case put condition
     3. save value in dp table before returning
 2. overlapping subproblem
 3. optimal substructue
 
+----
+Note: 
+Counting problems can be solved using dp
+----
+
 // Jamil Sir's Video Lectures:
-// 29-Nov: Topic 4 (Part 1): Basics of DP - Upto1hr09min
-// 30-Nov: Topic 4 (Part 1): Basics of DP - Completed
-// 30-Nov: Topic 4 (Part 2): DP: Video 1: - Upto24min
-// 01-Dec: Topic 4 (Part 2): DP: Video 1: - Completed
-// 01-Dec: Topic 4 (Part 2): DP: Video 2: - Upto24min
+// 29-Nov: S141_DP_1 - Upto1hr09min
+// 30-Nov: S141_DP_1 - Completed
+
+// 30-Nov: S7_MaxPathSum - Upto24min
+// 01-Dec: S7_MaxPathSum - Completed
+
+// 01-Dec: S7_withDP_CreatingExpression_ReachValue_NumberOfWays - Upto24min
+// 03-Dec: S7_withDP_CreatingExpression_ReachValue_NumberOfWays - Completed

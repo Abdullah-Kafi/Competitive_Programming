@@ -35,12 +35,17 @@ typedef pair<ll, ll> pll;
 vi v(100000);
 int n, x;
 
+int fix_mod(int a, int b)
+{
+    return ((a % b) + b) % b;
+}
+
 int f(int i, int curr_sum)
 {
-    if(i == n - 1) return curr_sum % x == 0;
+    if(i == n - 1) return curr_sum == 0;
     int a, b;
-    a = f(i + 1, curr_sum + v[i + 1]);
-    b = f(i + 1, curr_sum - v[i + 1]);
+    a = f(i + 1, fix_mod(curr_sum + v[i + 1], x));
+    b = f(i + 1, fix_mod(curr_sum - v[i + 1], x));
     // have to optimise for curr_sum
     return a || b;
 }

@@ -28,17 +28,33 @@ typedef pair<ll, ll> pll;
 #define testCase int __; cin >> __; while(__--)
 #define fraction() cout.unsetf(ios::floatfield); cout.precision(10); cout.setf(ios::fixed,ios::floatfield);
 
+vi v(20);
+int n, x;
+
+int f(int i, int s)
+{
+    if(i == n - 1) return s == x;
+
+    int plus = f(i + 1, s + v[i + 1]);
+    int minus = f(i + 1, s - v[i + 1]);
+
+    return plus || minus;
+}
+
 void solve()
 {
-    int n, x; cin >> n >> x;
+    cin >> n >> x;
     
     for(int i = 0; i < n; i++) cin >> v[i];
+    int ans = f(0, v[0]);
+    if(ans) cout << "YES" << el;
+    else cout << "NO" << el;
 }
 int main()
 {
     optimize();
     
-    testCase
+    //testCase
         solve();
 
     return 0;
