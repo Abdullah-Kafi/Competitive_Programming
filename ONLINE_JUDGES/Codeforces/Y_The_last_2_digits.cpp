@@ -22,8 +22,7 @@ void solve()
     }
     ans %= 100;
 
-    if(ans == 0) cout << "00" << el;
-    else if(ans >= 1 && ans <= 9) cout << "0" << ans << el;
+    if(ans <= 9) cout << 0 << ans << el;
     else cout << ans << el;
 }
 int main()
