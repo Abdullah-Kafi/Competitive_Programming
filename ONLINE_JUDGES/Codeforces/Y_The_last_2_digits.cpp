@@ -13,8 +13,15 @@ using ll = long long;
 
 void solve()
 {
-    int a, b, c, d; cin >> a >> b >> c >> d;
-    int ans = ((a % 100) * (b % 100) * (c % 100) * (d % 100)) % 100;
+    int x;
+    int ans = 1;
+    for(int i = 0; i < 4; i++)
+    {
+        cin >> x;
+        ans *= (x % 100);
+    }
+    ans %= 100;
+
     if(ans == 0) cout << "00" << el;
     else if(ans >= 1 && ans <= 9) cout << "0" << ans << el;
     else cout << ans << el;
