@@ -18,9 +18,8 @@ void solve()
     for(int i = 0; i < 4; i++)
     {
         cin >> x;
-        ans *= (x % 100);
+        ans = (ans * (x % 100)) % 100;
     }
-    ans %= 100;
 
     if(ans <= 9) cout << 0 << ans << el;
     else cout << ans << el;
