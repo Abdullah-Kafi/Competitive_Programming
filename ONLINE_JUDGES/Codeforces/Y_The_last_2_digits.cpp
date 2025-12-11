@@ -13,20 +13,11 @@ using ll = long long;
 
 void solve()
 {
-    vector<int> vc;
-    int n; cin >> n;
-
-    for(int i = 0; i < n; i++)
-    {
-        int x; cin >> x;
-        
-        vc.push_back(x);
-    }
-
-    for(int i = 0; i < n; i++)
-    {
-        cout << vc[i] << el;
-    }
+    int a, b, c, d; cin >> a >> b >> c >> d;
+    int ans = ((a % 100) * (b % 100) * (c % 100) * (d % 100)) % 100;
+    if(ans == 0) cout << "00" << el;
+    else if(ans >= 1 && ans <= 9) cout << "0" << ans << el;
+    else cout << ans << el;
 }
 int main()
 {
